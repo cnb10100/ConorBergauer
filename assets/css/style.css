@@ -1,33 +1,38 @@
+:root {
+  --main-color: #000080;
+  --secondary-color: #add8e6;
+  --back-color: #EBECF0;
+  --main-item-width: 65vw;
+  --main-item-height: 35vw;
+}
+
+body {
+  font-family: Tahoma, Arial, sans-serif;
+  background: var(--back-color)
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-
-body {
-  font-family: Tahoma, Arial, sans-serif;
-  margin: 0
-}
-
 /* Navigation Bar */
 
 header {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  background-color: #000080;
+  background-color: var(--main-color);
   background-size: cover;
   padding: 10px 15px;
   align-items: center;
 }
 
 header h1 {
-  color: #add8e6;
-  font-size: 35px;
+  color: var(--secondary-color);
+  font-size: 40px;
   font-weight: bold;
   margin: 12px 0;
-  border-right: solid 2px #add8e6;
-  padding-right: 15px;
 }
 
 header nav {
@@ -48,21 +53,116 @@ header nav ul li {
 
 header nav ul li a {
   padding: 10px 40px;
-  font-size: 22px;
+  font-size: 24px;
   text-decoration: none;
-  color: #add8e6;
-  border-bottom: solid 2px #add8e6;
+  color: var(--secondary-color);
+  border-bottom: solid 2px var(--secondary-color);
 }
 
-/* Contact Me Footer */
+/* Hero Section */
 
-footer {
+.hero {
+  background-image: url("../images/generic-banner.png");
+  background-size: cover;
+  background-position: 80%;
+  padding: 75px 50px;
+}
+
+.hero-content {
+  display: flex;
+  justify-content: flex-end;
+  font-size: 28px;
+  color: var(--main-color);
+}
+
+
+/* Content Styles Start */
+
+.content {
+  background: var(--back-color);
+}
+
+.work h2, .about h2, .contact-me h2 {
+  font-size: 40px;
+  flex: 1 30%;
+  flex-wrap: wrap;
+}
+.headings {
+  width: 22vw;
+}
+
+/* About Me Section */
+
+.about {
+  display: flex;
+  margin: 50px auto;
+  padding-bottom: 50px;
+}
+
+.about p {
+  font-size: 20px;
+}
+
+#bio {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
-  padding: 10px 15px;
-  align-items: center;
+  padding-bottom: 50px;
+  width: var(--main-item-width);
+  line-height: 2.0;
+  padding-left: 10px;
 }
+
+/* My Work Section */
+
+.main-item {
+  background-image: url('/assets/images/Screenshot\ \(13\).png');
+  background-size: cover;
+  width: 68vw;
+  height: var(--main-item-height);
+  border: solid 2px var(--main-color);
+}
+
+#my-work {
+  display: flex;
+}
+
+#media-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding-bottom: 50px;
+}
+
+.work-item {
+  background-size: cover;
+  width: calc(var(--main-item-width) / 2);
+  height: calc(var(--main-item-height) /2);
+  border: solid 2px var(--main-color);
+  margin: 20px;
+}
+
+.work-one {
+  background-image: url('/assets/images/coming-soon-placeholder.png');
+  
+}
+
+.work-two {
+  background-image: url('/assets/images/coming-soon-placeholder.png');
+}
+
+.work-three {
+  background-image: url('/assets/images/coming-soon-placeholder.png');
+}
+
+.work-four {
+  background-image: url('/assets/images/coming-soon-placeholder.png');
+}
+
+.description {
+  justify-content: center;
+  display: flex;
+}
+/* Contact Me Section */
 
 .contact-me {
   margin: 12px 0;
@@ -84,6 +184,6 @@ footer {
   padding: 10px 40px;
   font-size: 22px;
   text-decoration: none;
-  color: inherit;
-  border-bottom: solid 2px #000080;
+  color: var(--main-color);
+  border-bottom: solid 2px var(--main-color);
 }
