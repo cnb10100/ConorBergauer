@@ -59,6 +59,13 @@ header nav ul li a {
   border-bottom: solid 2px var(--secondary-color);
 }
 
+header nav ul li a:hover {
+  background: var(--secondary-color);
+  color:var(--main-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
 /* Hero Section */
 
 .hero {
@@ -87,8 +94,10 @@ header nav ul li a {
   flex: 1 30%;
   flex-wrap: wrap;
 }
+
 .headings {
-  width: 22vw;
+ flex: 25%;
+ color: var(--main-color);
 }
 
 /* About Me Section */
@@ -106,20 +115,21 @@ header nav ul li a {
 #bio {
   display: flex;
   flex-wrap: wrap;
-  padding-bottom: 50px;
-  width: var(--main-item-width);
   line-height: 2.0;
-  padding-left: 10px;
+  flex: 75%;
+  justify-content: center;
+  color: var(--main-color);
 }
 
 /* My Work Section */
 
 .main-item {
-  background-image: url('/assets/images/Screenshot\ \(13\).png');
+  background-image: url("../images/Screenshot\ \(13\).png");
   background-size: cover;
-  width: 68vw;
+  width: 67vw;
   height: var(--main-item-height);
   border: solid 2px var(--main-color);
+  border-radius: 15px;
 }
 
 #my-work {
@@ -128,9 +138,9 @@ header nav ul li a {
 
 #media-cards {
   display: flex;
-  justify-content: center;
   flex-wrap: wrap;
   padding-bottom: 50px;
+  flex: 75%;
 }
 
 .work-item {
@@ -138,34 +148,44 @@ header nav ul li a {
   width: calc(var(--main-item-width) / 2);
   height: calc(var(--main-item-height) /2);
   border: solid 2px var(--main-color);
-  margin: 20px;
+  border-radius: 15px;
 }
 
 .work-one {
-  background-image: url('/assets/images/coming-soon-placeholder.png');
-  
+  background-image: url("../images/coming-soon-placeholder.png");
+  margin-right: 40px;
+  margin-top: 20px;
 }
 
 .work-two {
-  background-image: url('/assets/images/coming-soon-placeholder.png');
+  background-image: url("../images/coming-soon-placeholder.png");
+  margin-top: 20px;
 }
 
 .work-three {
-  background-image: url('/assets/images/coming-soon-placeholder.png');
+  background-image: url("../images/coming-soon-placeholder.png");
+  margin-right: 40px;
+  margin-top: 20px;
 }
 
 .work-four {
-  background-image: url('/assets/images/coming-soon-placeholder.png');
+  background-image: url("../images/coming-soon-placeholder.png");
+  margin-top: 20px;
 }
 
 .description {
-  justify-content: center;
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--main-color);
 }
 /* Contact Me Section */
 
 .contact-me {
   margin: 12px 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .contact-me ul {
@@ -173,17 +193,33 @@ header nav ul li a {
   flex-wrap: wrap;
   justify-content: space-between;
   list-style: none;
-}
-
-.contact-me ul li {
-  padding: 5px;
-  margin: 3px;
+  flex: 75%;
 }
 
 .contact-me ul li a {
-  padding: 10px 40px;
   font-size: 22px;
   text-decoration: none;
   color: var(--main-color);
-  border-bottom: solid 2px var(--main-color);
+}
+
+.contact-me ul li a:hover {
+  background: var(--main-color);
+  color:var(--secondary-color);
+  border-radius: 15px;
+  text-shadow: none;
+}
+
+/* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
+@media screen and (max-width: 980px) {
+
+}
+
+/* MEDIA QUERY FOR TABLETS AND SMALLER */
+@media screen and (max-width: 768px) {
+
+}
+
+/* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
+@media screen and (max-width: 575px) {
+  
 }
