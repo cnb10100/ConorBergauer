@@ -82,7 +82,6 @@ header nav ul li a:hover {
   color: var(--main-color);
 }
 
-
 /* Content Styles Start */
 
 .content {
@@ -293,5 +292,10 @@ header nav ul li a:hover {
 
   .description {
     font-size: 15px;
+  }
+
+  header nav {
+    flex-direction: column;
+
   }
 }
