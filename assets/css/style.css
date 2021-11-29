@@ -132,6 +132,15 @@ header nav ul li a:hover {
   border-radius: 15px;
 }
 
+.link {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+}
+
 #my-work {
   display: flex;
 }
@@ -178,6 +187,7 @@ header nav ul li a:hover {
   flex-direction: column;
   align-items: center;
   color: var(--main-color);
+  position: relative;
 }
 /* Contact Me Section */
 
@@ -264,5 +274,24 @@ header nav ul li a:hover {
   }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
-  
+  .hero {
+    padding: 40px 30px;
+  }
+
+  #media-cards {
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+  }
+
+  .work-item {
+    width: 100%;
+    padding: 0;
+    margin: 20px auto;
+    background-size: contain;
+  }
+
+  .description {
+    font-size: 15px;
+  }
 }
