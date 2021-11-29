@@ -211,14 +211,57 @@ header nav ul li a:hover {
 
 /* MEDIA QUERY FOR SMALLER DESKTOP SCREENS AND SMALLER */
 @media screen and (max-width: 980px) {
+  header {
+    position: relative;
+    padding-bottom: 0;
+    justify-content: center;
+  }
 
+  .main-item {
+    width: 69vw;
+  }
 }
 
 /* MEDIA QUERY FOR TABLETS AND SMALLER */
 @media screen and (max-width: 768px) {
+  header nav ul li a {
+    font-size: 21px;
+  }
 
-}
+  .hero-content {
+    justify-content: center;
+  }
 
+  .headings {
+    margin-bottom: 20px;
+    border-bottom: solid 2px var(--main-color);
+  }
+
+  .about {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #my-work {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #media-cards {
+    justify-content: center;
+  }
+
+  .main-item {
+    width: 70vw;
+  }
+
+  .contact-me {
+    flex-direction: column;
+  }
+
+  .contact-me ul {
+    flex-direction: column;
+  }
 /* MEDIA QUERY FOR MOBILE PHONES AND SMALLER */
 @media screen and (max-width: 575px) {
   
